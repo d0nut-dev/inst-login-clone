@@ -1,0 +1,255 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    background-color: rgb(249, 249, 249);
+    font-family: "Segoe UI",Helvetica,Arial,sans-serif;
+    
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+
+    min-height: 905px;
+    margin: 0;
+}
+
+/* containers */
+
+.main-container{
+    display:flex; 
+    flex-direction: column; 
+    
+
+
+    justify-content: center; 
+    align-items: center; 
+    height: 80%;
+}
+.video-container{
+    display: none;
+    margin-right: 30px;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 27px;
+}
+.login-container{
+    text-align: center;
+
+    border: solid 1px lightgray;
+
+    background-color: white;
+
+    width: 350px;
+    min-height: 395px;
+}
+.or-container{
+    color: gray;
+    position: relative;
+    margin: 10px 0;
+}
+.registration-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: solid 1px lightgray;
+
+    background-color: white;
+
+    width: 350px;
+    min-height: 60px;
+
+    margin: 10px 0;
+
+    color: rgb(40, 40, 40);
+    font-size: 14px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: 20%;
+    /* height: 249px; */
+    /* padding-bottom: 20px; */
+}
+
+/* login-container */
+
+.logo-insta{
+    margin: 45px 0px 30px 0px;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    margin: 0 20px;
+}
+.log-insta, .input-box{
+    display: block;
+    background-color: rgb(249, 249, 249);
+    border: solid 1px lightgray;
+    border-radius: 4px;
+    
+    width: 270px;
+    margin: 3px;
+    padding: 11px 8px;
+
+    font-size: 12px;
+}
+.login-button{
+    width: 288px;
+    margin: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: rgb(0, 145, 255);
+    border: none;
+    border-radius: 4px;
+
+    padding: 6px;
+}
+hr{
+    color: rgb(228, 227, 227);
+    border-top: solid 1px;
+    width: 270px;
+}
+.or{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(161, 161, 161);
+    background-color: white;
+
+    padding: 0 20px;
+    
+    position: absolute;
+    top: -5px;
+    left: 140px;
+}
+.login-facebook{
+    display: flex;
+    justify-content: center;
+
+    color: rgb(25, 66, 131);
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-top: 42px;
+    margin-bottom: 23px;
+}
+.login-facebook-img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+.forget-password{
+    color: rgb(25, 66, 131);
+    font-size: 13px;
+}
+
+/* registration container */
+
+.registration-text{
+    color: rgb(0, 145, 255);
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+/* install app */
+
+.download-app-text{
+    font-size: 14px;
+    text-align: center;
+
+    margin-top: 12px;
+}
+.download-app-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.download-app-img{
+    width: 140px;
+    margin: 20px 4px;
+}
+
+/* footer */
+
+.footer-in,
+.footer-cop{
+    /* height: 100%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-end; */
+    flex-wrap: wrap;
+}
+
+footer div{
+    font-size: 13px;
+    margin: 4px 8px;
+    color: gray;
+}
+
+/* Hover */
+
+.login-button:hover,
+.login-facebook:hover,
+.forget-password:hover,
+.registration-text:hover,
+.download-app-img:hover,
+.footer-in div:hover{
+    cursor: pointer;
+}
+
+/* Active */
+
+.login-button:active,
+.login-facebook:active,
+.forget-password:active,
+.registration-text:active,
+.download-app-img:active,
+.footer-in div:active{
+    opacity: 0.7;
+}
+
+/* Media */
+
+@media (min-width: 875px) {
+    .main-container{
+        flex-direction: row;
+    }
+    .video-container{
+        display: block;
+    }
+}
+@media (max-width: 450px) {
+    .main-container{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .login-container{
+        background-color: rgb(249, 249, 249);
+        border: none;
+    }
+    .logo-insta{
+        margin-top: 0;
+    }
+    .or{
+        background-color: rgb(249, 249, 249);
+    }
+    .registration-container{
+        background-color: rgb(249, 249, 249);
+        border: none;
+        flex-direction: column;
+    }
+}
